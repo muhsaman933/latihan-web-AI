@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LATIHAN HTML</title>
+  <style>
+    /* Reset and Base Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    
+    /* Section Styling */
+    section {
+      margin-bottom: 30px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    h1, h2 {
+      color: #2c3e50;
+    }
+    
+    h1 {
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+    
+    h2 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    
+    /* Menu Styling */
+    .menu-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    .menu-table td {
+      padding: 15px;
+      text-align: center;
+      background-color: #2c3e50;
+      border: none;
+    }
+    
+    .menu-table a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    .menu-table a:hover {
+      color: #3498db;
+    }
+    
+    /* Welcome Section */
+    .welcome-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .welcome-table td {
+      padding: 20px;
+      vertical-align: top;
+    }
+    
+    .welcome-table img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    
+    .learn-more {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+    
+    .learn-more:hover {
+      background-color: #2980b9;
+    }
+    
+    /* About Me Section */
+    .about-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .about-table td {
+      padding: 15px;
+      border: 1px solid #ddd;
+    }
+    
+    .about-table strong {
+      color: #2c3e50;
+    }
+    
+    /* Portfolio Section */
+    .portfolio-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .portfolio-table th {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      text-align: left;
+    }
+    
+    .portfolio-table td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+    }
+    
+    .portfolio-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    .portfolio-table a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .portfolio-table a:hover {
+      text-decoration: underline;
+    }
+
+    /* Button Styling */
+    .learn-more {
+      background-color: #3498db;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .learn-more:hover {
+      background-color: #2980b9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .welcome-table td {
+        display: block;
+        width: 100% !important;
+      }
+      
+      .welcome-table img {
+        margin-top: 20px;
+      }
+      
+      .about-table td {
+        display: block;
+        width: 100%;
+      }
+      
+      .menu-table td {
+        font-size: 14px;
+      }
+    }
+    
+    /* Additional Styling for Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table td, table th {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    /* Styling for Links */
+    a {
+      text-decoration: none;
+      color: #3498db;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Section 1: Menu -->
+<section>
+  <h2>Menu</h2>
+  <table class="menu-table">
+    <tr>
+      <td><a href="#">Home</a></td>
+      <td><a href="#">Tentang</a></td>
+      <td><a href="#">Biodata</a></td>
+      <td><a href="#">Portofolio</a></td>
+      <td><a href="#">Kontak</a></td>
+    </tr>
+  </table>
+</section>
+
+<!-- Section 2: Judul di kiri dan gambar di kanan -->
+<section>
+  <h1>Selamat Datang</h1>
+  <table class="welcome-table">
+    <tr>
+      <td width="50%">
+        <h3>Selamat Datang di Website saya</h3>
+        <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini yang menjelaskan tentang website Anda. Anda bisa menambahkan lebih banyak informasi di sini.</p>
+        <a href="#section-lanjutan" class="learn-more">Pelajari Lebih Lanjut</a>
+      </td>
+      <td width="50%" align="center">
+        <img src="https://via.placeholder.com/400x300" alt="Gambar Contoh">
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- Section 3: About Me -->
+<section>
+  <h2>About Me</h2>
+  <table class="about-table">
+    <tr>
+      <td><strong>Nama:</strong><br>M Saman</td>
+      <td><strong>Usia:</strong><br>29 tahun</td>
+      <td><strong>Alamat:</strong><br>Indonesia</td>
+    </tr>
+    <tr>
+      <td><strong>Pendidikan:</strong><br>S1 Sastra Arab</td>
+      <td><strong>Email:</strong><br>msamantungkal@gmail.com</td>
+      <td><strong>Telepon:</strong><br>+62 85669570492</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Section 4: Portofolio -->
+<section>
+  <h2>Portofolio</h2>
+  <table class="portfolio-table">
+    <tr>
+      <th>Proyek</th>
+      <th>Deskripsi</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>Dashboard Supermarket</td>
+      <td>Analisis penjualan & profit</td>
+      <td><a href="#">Lihat</a></td>
+    </tr>
+    <tr>
+      <td>Modul Excel</td>
+      <td>Pengajaran untuk siswa SMP</td>
+      <td><a href="#">Lihat</a></td>
+    </tr>
+    <tr>
+      <td>Sistem Manajemen Perpustakaan</td>
+      <td>Aplikasi desktop untuk manajemen buku</td>
+      <td><a href="#">Lihat</a></td>
+    </tr>
+  </table>
+</section>
+
+</body>
+</html>
